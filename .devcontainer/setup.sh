@@ -14,5 +14,3 @@ pip install --root-user-action=ignore --upgrade uv
 
 # Print success message
 print_section "Installation Complete"
-echo "🧠 Cortex instalado com êxito! 🎉"
-echo "Para usar, digite 'cortex' no terminal."
