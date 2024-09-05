@@ -1,4 +1,6 @@
 from openai import OpenAI
+
+
 def main():
     client = OpenAI(
         base_url="http://localhost:8000/v1",
@@ -6,10 +8,8 @@ def main():
     )
 
     completion = client.chat.completions.create(
-    model="NousResearch/Meta-Llama-3-8B-Instruct",
-    messages=[
-        {"role": "user", "content": "Hello!"}
-    ]
+        model="NousResearch/Meta-Llama-3-8B-Instruct",
+        messages=[{"role": "user", "content": "Hello!"}],
     )
 
     print(completion.choices[0].message)
